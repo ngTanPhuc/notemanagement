@@ -1,0 +1,10 @@
+spring.application.name=notemanagement
+spring.datasource.url=
+
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
