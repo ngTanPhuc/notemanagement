@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repository
+@Repository  // create a proxy class during runtime. Contains logic for save, delete, findBy,...
 public interface UserRepo extends JpaRepository<User, Long> {
     Optional<User> findByEmail(String email);  // using Optional to prevent NullPointerException
 

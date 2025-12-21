@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity  // tells the JPA (Java Persistence API) that this class would be a synonym to a DB table
-@Data  // tells the Lombok to create the getter, setter, hashCode, equals,... methods
+// Tells the Lombok to create the getter, setter, hashCode, equals,... methods
+// for each of the attributes. e.g. getPassword()
+@Data
 public class User {
     @Id  // PK
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // auto generate value
