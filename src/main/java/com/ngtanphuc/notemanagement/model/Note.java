@@ -20,4 +20,8 @@ public class Note {
     @CreationTimestamp
     @JsonFormat(pattern = "dd/MM/yy")
     private LocalDateTime createdDate;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)  // error "cannot resolve...": schema sync error
+    private User user;
 }
